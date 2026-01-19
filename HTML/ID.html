@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+} 
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+} 
+</style>
+</head>
+<body>
+
+<h2>Mai NGọc Thảo</h2>
+<p>MSV:</p>
+
+<h1 id="myHeader">2221050827</h1>
+
+<h2 class="city">Mai Thảo</h2>
+<p>2221050827.</p>
+
+<h2 class="city">MSV</h2>
+<p>2221050827.</p>
+
+<h1 id="myHeader1">Mai Ngọc Thảo</h1>
+<button onclick="displayResult()">MSV</button>
+
+<script>
+function displayResult() {
+  document.getElementById("myHeader1").innerHTML = "2221050827!";
+}
+</script>
+</body>
+</html>

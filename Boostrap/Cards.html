@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Hồ sơ</h2>
+  <div class="card">
+    <div class="card-body">Hồ sơ Mai Thảo</div>
+  </div>
+</div>
+<div class="container mt-3">
+  <h2>Card Header and Footer</h2>
+  <div class="card">
+    <div class="card-header">Header</div>
+    <div class="card-body">Content</div> 
+    <div class="card-footer">Footer</div>
+  </div>
+</div>
+<div class="container mt-3">
+  <h2>Màu sắc các Card</h2>
+  <div class="card">
+    <div class="card-body">Basic card</div>
+  </div>
+  <br>
+  <div class="card bg-primary text-white">
+    <div class="card-body">Primary card</div>
+  </div>
+  <br>
+  <div class="card bg-success text-white">
+    <div class="card-body">Success card</div>
+  </div>
+  <br>
+  <div class="card bg-info text-white">
+    <div class="card-body">Info card</div>
+  </div>
+  <br>
+  <div class="card bg-warning text-white">
+    <div class="card-body">Warning card</div>
+  </div>
+  <br>
+  <div class="card bg-danger text-white">
+    <div class="card-body">Danger card</div>
+  </div>
+  <br>
+  <div class="card bg-secondary text-white">
+    <div class="card-body">Secondary card</div>
+  </div>
+  <br>
+  <div class="card bg-dark text-white">
+    <div class="card-body">Dark card</div>
+  </div>
+  <br>
+  <div class="card bg-light text-dark">
+    <div class="card-body">Light card</div>
+  </div>
+</div>
+<div class="container mt-3">
+  <h2>Card titles, text, and links</h2>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">Link giới thiệu.</p>
+      <a href="#" class="card-link">Link HUMG</a>
+      <a href="#" class="card-link">Link Mai Thảo</a>
+    </div>
+  </div>
+</div>
+<div class="container mt-3">
+  <h2>Card Image</h2>
+  <p>Hình ảnh:</p>
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src="data:image/png;base64,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" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Mai Ngọc Thảo</h4>
+      <p class="card-text">Một số về mai Thảo</p>
+      <a href="#" class="btn btn-primary">Xem Hồ sơ</a>
+    </div>
+  </div>
+</div>
+<div class="container mt-3">
+  <h2>Card Image Overlay</h2>
+  <p>Turn an image into a card background and use .card-img-overlay to overlay the card's text:</p>
+  <div class="card img-fluid" style="width:500px">
+    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKPuwGNFVa8LiMaY0Zq6neSYmC8qyHQHK1ew&s" alt="Card image" style="width:100%">
+    <div class="card-img-overlay">
+      <h4 class="card-title">Mai Ngọc Thảo</h4>
+      <p class="card-text">Một số về Mai Thảo.</p>
+      <a href="#" class="btn btn-primary">Xem Hồ sơ</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

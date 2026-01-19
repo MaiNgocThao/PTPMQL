@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+.gt {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+.main {
+  text-align: center;}
+</style>
+</head>
+<body>
+
+<div class="city main">
+<h2>Mai Thảo</h2>
+<p>2221050827.</p>
+</div> 
+
+<div class="city">
+<h2>Mai Thảo</h2>
+<p>2221050827.</p>
+</div>
+
+<h2 class="gt">MAi Thảo</h2>
+<p>Mai Ngọc Thảo.</p>
+
+<h2 class="gt">Mai Thảo</h2>
+<p>MAi Ngọc Thảo.</p>
+
+<button onclick="myFunction()">Ẩn h</button>
+
+<h2 class="city">Mai Thảo</h2>
+<p>2221050827.</p>
+
+<h2 class="city">Mai Ngọc Thảo</h2>
+<p>MSV trên.</p>
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+</body>
+</html>

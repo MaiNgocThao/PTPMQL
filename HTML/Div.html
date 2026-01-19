@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<style>
+div {
+  background-color: #FFF4A3;
+  width: 300px;
+  margin: auto;
+}
+div.mycontainer {
+  width:100%;
+  overflow:auto;
+}
+div.mycontainer div {
+  width:33%;  
+  float:left;
+}
+.mycon {
+  display: flex;
+}
+.mycon > div {
+  width:33%;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+</style>
+<body>
+
+<h1>HTML DIV Example</h1>
+
+Mai <div>Ngọc </div> Thảo.
+
+<div>
+  <h2>Mai Thảo</h2>
+  <p>MSV: 2221050827</p>
+  <p>VietNam.</p>
+</div>
+<div style="background-color:#FFC0C7;">
+  <h2>Mai Ngọc thảo</h2> 
+</div>
+
+<div style="background-color:#D9EEE1;">
+  <h2>Mai Ngọc thảo</h2>
+</div>
+
+<div class="mycontainer">
+
+  <div style="background-color:#FFF4A3;">
+    <h2>MAi Thảo</h2>
+    <p>2221050827</p>
+    
+  </div>
+  
+  <div style="background-color:#FFC0C7;">
+    <h2>Mai Thảo</h2>
+    <p>2221050827.</p>
+  </div>
+<br>
+</div>
+
+<div class="mycon">
+
+  <div style="background-color:#FFF4A3;">
+    <h2>Mai Thảo</h2>
+    <p>2221050827.</p>
+  </div>
+  
+  <div style="background-color:#FFC0C7;">
+    <h2>Mai Thảo</h2>
+    <p>2221050827.</p>
+  </div>
+  
+</div>
+<div class="grid-container">
+
+<div style="background-color:#FFF4A3;">
+  <h2>Mai Thảo</h2>
+  <p>2221050827.</p>
+</div>
+
+<div style="background-color:#FFC0C7;">
+  <h2>Mai Thảo</h2>
+  <p>2221050827.</p>
+</div>
+
+</div>
+
+</body>
+</html>
