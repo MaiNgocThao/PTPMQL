@@ -55,7 +55,7 @@ Gọi các mẫu View và trả về dữ liệu
 Mặc định khi tạo project sẽ có HomeController
 Trong controller sẽ chứa các action (ví dụ: Index, Privacy), mỗi action sẽ thực thi một nhiệm vụ cụ thể (trả về các view tương ứng)
 Chọn thư mục Controllers, click chuột phải => New File => đặt tên file là HelloWorldController.cs:
-##View
+## View
 Có phần mở rộng là “.cshtml”
 Nằm trong thư mục Views/Controler_Name (tương ứng với HelloWorldController sẽ có thư mục HelloWorld trong thư mục Views)
 Nhiệm vụ của View: Cung cấp giao diện người dùng (HTML) bằng C#
