@@ -1,0 +1,15 @@
+C:\Net_Core_API\NetCoreAPI\DemoProject\bin\Debug\net10.0\DemoProject.exe
+C:\Net_Core_API\NetCoreAPI\DemoProject\bin\Debug\net10.0\DemoProject.deps.json
+C:\Net_Core_API\NetCoreAPI\DemoProject\bin\Debug\net10.0\DemoProject.runtimeconfig.json
+C:\Net_Core_API\NetCoreAPI\DemoProject\bin\Debug\net10.0\DemoProject.dll
+C:\Net_Core_API\NetCoreAPI\DemoProject\bin\Debug\net10.0\DemoProject.pdb
+C:\Net_Core_API\NetCoreAPI\DemoProject\obj\Debug\net10.0\DemoProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Net_Core_API\NetCoreAPI\DemoProject\obj\Debug\net10.0\DemoProject.AssemblyInfoInputs.cache
+C:\Net_Core_API\NetCoreAPI\DemoProject\obj\Debug\net10.0\DemoProject.AssemblyInfo.cs
+C:\Net_Core_API\NetCoreAPI\DemoProject\obj\Debug\net10.0\DemoProject.csproj.CoreCompileInputs.cache
+C:\Net_Core_API\NetCoreAPI\DemoProject\obj\Debug\net10.0\DemoProject.sourcelink.json
+C:\Net_Core_API\NetCoreAPI\DemoProject\obj\Debug\net10.0\DemoProject.dll
+C:\Net_Core_API\NetCoreAPI\DemoProject\obj\Debug\net10.0\refint\DemoProject.dll
+C:\Net_Core_API\NetCoreAPI\DemoProject\obj\Debug\net10.0\DemoProject.pdb
+C:\Net_Core_API\NetCoreAPI\DemoProject\obj\Debug\net10.0\DemoProject.genruntimeconfig.cache
+C:\Net_Core_API\NetCoreAPI\DemoProject\obj\Debug\net10.0\ref\DemoProject.dll
