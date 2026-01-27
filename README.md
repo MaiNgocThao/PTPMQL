@@ -60,4 +60,33 @@ Có phần mở rộng là “.cshtml”
 Nằm trong thư mục Views/Controler_Name (tương ứng với HelloWorldController sẽ có thư mục HelloWorld trong thư mục Views)
 Nhiệm vụ của View: Cung cấp giao diện người dùng (HTML) bằng C#
 Trong thư mục Views =>Tạo thư mục HelloWorld => tạo file Index.cshtml
+##ViewBag
+ViewBag: là phương thức hỗ trợ gửi dữ liệu từ Controller tới View
+Trong đó:
+@ViewBag.Message: sử dụng để hiển thị dữ liệu từ Controller gửi về.
+Ký tự @ để thể hiện cho mã C#.
+ViewBag.Message: lấy từ bên Controller (code dòng 24) đưa sang.
+Ví dụ:
+@{
+    ViewData["Title"] = "Home Page";    
+
+}
+<form asp-action="Index">
+    <label>Nhập Họ tên: </label>
+    <input type="text" name="FullName" />
+    <label>Nhập địa chỉ: </label>
+    <input type="text" name="Address" />
+    <input type="submit" value="Gửi dữ liệu" />
+</form>
+##Gửi nhận dữ liệu giữa View và Controller thông qua Submit form.
+Trong đó:
+Thẻ form: dung để chứa các phần từ nhập liệu từ người dung.
+asp-action="Index": chỉ định dữ liệu được gửi từ View lên action Index
+input type="text": các ô để nhập dữ liệu gửi từ View
+asp-action="submit": nút lệnh để thực hiện gửi dữ liệu từ form lên action ở controller
+name của thẻ input: sử dụng để khớp với các thuộc tính ở phương thức Index trên Controller
+HttpPost: sử dụng để chỉ định phương thức sẽ nhận dữ liệu từ View gửi lên.
+2 thuộc tính FullName và Address của action Index: sử dụng để lưu dữ liệu từ View gửi lên, tên của 2 thuộc tính chính là name của các thẻ input muốn gửi dữ liệu trên View.
+ViewBag: là phương thức hỗ trợ gửi dữ liệu từ Controller tới View
+
 
