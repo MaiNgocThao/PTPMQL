@@ -1,17 +1,20 @@
 using Microsoft.EntityFrameworkCore;
-using DemoMVC.Models.Student;
-
+using DemoMVC.Models;
 namespace DemoMVC.Data
 {
     public class ApplicationDbContext : DbContext
     {
-        // Constructor bắt buộc
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
         }
-
-        // Khai báo bảng trong database
-        public DbSet<Student> Students { get; set; } = null!;
+    public DbSet<Student> Students { get; set; } 
+    public DbSet<Faculty> Faculties { get; set; }
+        
+        // Thêm mới
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
     }
 }

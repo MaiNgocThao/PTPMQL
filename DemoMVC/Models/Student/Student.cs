@@ -1,15 +1,17 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace DemoMVC.Models.Student
+namespace DemoMVC.Models
 {
     public class Student
     {
         [Key]
-        [Required]
-        public int Id { get; set; } = default;
-
-        public string MSV { get; set; } = default!;
-
+        [MinLength(6, ErrorMessage = "Ma sinh vien phai co it nhat 6 ky tu")]
+        public string Id { get; set; } = default!;
+        [Required(ErrorMessage = "Ho va ten khong duoc de trong")]
         public string FullName { get; set; } = default!;
+        public string FacultyId { get; set; } = default!;
+        [ForeignKey("FacultyId")]
+        public virtual Faculty? Faculty { get; set; } = default!;
     }
 }

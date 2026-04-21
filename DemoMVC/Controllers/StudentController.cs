@@ -1,19 +1,36 @@
 using Microsoft.AspNetCore.Mvc;
-using DemoMVC.Models.Student;
+using DemoMVC.Data;
+using DemoMVC.Models;
+
 namespace DemoMVC.Controllers
 {
     public class StudentController : Controller
     {
-        [HttpGet]
-        public IActionResult Index()
+        private readonly ApplicationDbContext _context;
+
+        public StudentController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
+        // GET
+        public IActionResult Create()
         {
             return View();
         }
+
+        // POST
         [HttpPost]
-        public IActionResult Index(Student std)
+        public IActionResult Create(Student student)
         {
-            ViewBag.ThongBao = "Xin chào: " + std.FullName + " - Mã sinh viên: " + std.MSV;
-            return View();
+            if (ModelState.IsValid)
+            {
+                _context.Students.Add(student);
+                _context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+
+            return View(student);
         }
     }
 }
